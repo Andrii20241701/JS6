@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    <!-- - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б-->
+    // const square = (a, b) => a * b;
+    // console.log(square(5,10));
+
+
+    // - створити функцію яка обчислює та повертає площу кола з радіусом r
+    // const area = (radius)=>2 * Math.PI * radius;
+    // console.log(area(10));
+
+    // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+    // const area2=(height,radius)=>2 * Math.PI * height * radius;
+    // console.log(area2(10,15));
+
+    // - створити функцію яка приймає масив та виводить кожен його елемент
+    // let dogs = (dataObj) =>{
+    //     document.write(`
+    //     <div>
+    //     <h3>
+    //              ім'я - ${dataObj.name},
+    //              порода - ${dataObj.breed},
+    //              вік - ${dataObj.age}
+    //              </h3></div>`);
+    // }
+    //
+    // let data =[
+    //     {name: 'Skiff', breed:'shepherd', age: '5'},
+    //     {name: 'Argo', breed:'rottweiler', age: '3'},
+    //     {name: 'Vel', breed:'mastiff', age: '5'},
+    // ];
+    //
+    // for (const datum of data) {
+    //     dogs(datum);
+    // }
+    // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+    // let tag = (text,tagName)=> {
+    //     document.write(`<${tagName}>${text}</${tagName}>`);
+    // }
+    //   tag('FREEDOM', 'p');
+
+
+    // - створити функцію яка створює ul з трьома елементами li.
+    //   Текст li задати через аргумент всім однаковий
+    // let tag =(text)=>{
+    // document.write('<ul>')
+    //         document.write(`<li>${text}</li>`)
+    //         document.write(`<li>${text}</li>`)
+    //         document.write(`<li>${text}</li>`)
+    //     document.write('</ul>')
+    //     }
+    //     tag('TRUE');
+
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
+    // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+
+    // let tag=(text,count)=>{
+    //     document.write('<ul>')
+    //         for (let i = 0; i<count; i++) {
+    //             document.write(`<li>${text}</li>`)
+    //         }
+    //     document.write('</ul>')
+    //         }
+    //         tag('TRUE', 3);
+
+    // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві),
+    //   та будує для них список
+    // let array=(numbers, string, boolean)=> {
+    //     document.write('<ul>')
+    //         document.write(`<li>${numbers}</li>`)
+    //         document.write(`<li>${string}</li>`)
+    //         document.write(`<li>${boolean}</li>`)
+    //     document.write('</ul>')
+    //     }
+    //     array(5,'good', false);
+
+
+
+    // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , '
+    //   та виводить їх в документ. Для кожного об'єкту окремий блок.
+    // let arrayId=(dataObj)=>{
+    //     document.write(`
+    //     <div><h3>номер - ${dataObj.id}</h3></div>
+    //     <div><h3>ім'я - ${dataObj.name}</h3></div>
+    //     <div><h3>age - ${dataObj.age}</h3></div>`);
+    //
+    // }
+    //
+    // let dataDogs =[
+    //     {id: '1', name: 'Skiff', age: '5'},
+    //     {id:'2', name: 'Argo', age: '3'},
+    //     {id:'3',name: 'Vel', age: '5'},
+    // ];
+    //
+    // for (const datum of dataDogs) {
+    //     arrayId(datum);
+    // }
+
+    // - створити функцію яка повертає найменьше число з масиву
+
+    //
+    //     function minNumber() {
+    //         let min = arguments[0];
+    //         for (const item of arguments) {
+    //             if (item < min) {
+    //                 min = item;
+    //             }
+    //         }
+    //         console.log('Min-number:', min)
+    //         return min;
+    //     }
+    // let result=minNumber(1, 2, 3, 4, 5, 6, 7,-3);
+    // minNumber(result)
+
+    // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає
+    //   його. Приклад sum([1,2,10]) //->13
+    // let array=[1,2,10];
+    // const arraySum=(array)=> {
+    //     let temp = 0;
+    //     for (let i = 0; i <= array.length; i++) {
+    //         temp = array[i];
+    //     }
+    //     return temp;
+    // }
+    // console.log(arraySum(array));
+    // }
+
+
+    //    // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення
+    //    у відповідних індексах
+    // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+
+    // const swap =(arr,index1,index2)=>
+    // {
+    //
+    //     let temp = arr[index1];
+    //     arr[index1] = arr[index2];
+    //     arr[index2] = temp;
+    //     return arr;
+    // }
+    //     let arr = [11,22,33,44];
+    //     let result= swap (arr,0,1);
+    //    console.log(result);
+
+
+    // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
+    // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
+
+    // const exchange = (sumUAH,currencyValues,exchangeCurrency) =>{
+    //       result=sumUAH/exchangeCurrency;
+    //       document.write(currencyValues, " ", result);
+    //   }
+    //   exchange (1000,'EUR',41)
+
+</script>
+</body>
+</html>
